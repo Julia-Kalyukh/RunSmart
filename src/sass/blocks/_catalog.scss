@@ -140,7 +140,7 @@
                 font-weight: 300;
                 line-height: 21px;
                 margin-bottom: 20px;
-                &:before {
+                &::before {
                     content: '';
                     position: absolute;
                     width: 5px;
