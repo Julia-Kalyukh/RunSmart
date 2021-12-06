@@ -40,6 +40,13 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        display: none;
+        &_active {
+            display: flex;
+        }
+        &_triathlon{
+            justify-content: space-evenly;
+        }
     }
     &-item {
         width: 300px;
