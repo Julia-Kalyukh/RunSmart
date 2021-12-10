@@ -43,4 +43,32 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         });
     });
+
+    // Validation
+    function valideForms(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true,
+                }
+            },
+            messages: {
+                name: "Пожалуйста, введите свое имя",
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                    required: "Пожалуйста, введите свою почту",
+                    email: "Неправильно введен адрес почты"
+                }
+            }
+        });
+    }
+
+    valideForms('#order form');
+    valideForms('#consultation-form');
+    valideForms('#consultation form');
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 });
