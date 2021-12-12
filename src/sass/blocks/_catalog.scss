@@ -140,21 +140,25 @@
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
-            li {
-                position: relative;
-                color: #555555;
-                font-size: 14px;
-                font-weight: 300;
-                line-height: 21px;
-                margin-bottom: 20px;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    width: 5px;
-                    height: 5px;
-                    background-color: $main-color;
-                    left: -14px;
-                    top: 7px;
+            ul {
+                padding: 0;
+                li {
+                    list-style-type: none;
+                    position: relative;
+                    color: #555555;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 21px;
+                    margin-bottom: 20px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main-color;
+                        left: -14px;
+                        top: 7px;
+                    }
                 }
             }
         }
